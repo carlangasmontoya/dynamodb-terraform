@@ -1,0 +1,1 @@
+dynamodb_table_name = "tabla_orquestacion_stg_mst_dmt"

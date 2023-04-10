@@ -1,0 +1,223 @@
+{
+    "process_id": {
+     "S": "stg-mst-dmt-mdh-chile-full-prod"
+    },
+    "toolkit_id": {
+     "S": "mdh"
+    },
+    "airflow_id": {
+     "S": "airflow-mdh-cl-mdh-cl-prod"
+    },
+    "api_bot_error": {
+     "S": "https://cnco.webhook.office.com/webhookb2/afe42a94-ae0f-4d90-adf8-e2db63d9b0e7@a50762c4-c5ad-413a-a05e-9ffe15752882/IncomingWebhook/b21ae07c1f6b4e49b4c808512bb83349/459fa103-3be7-49a1-beb6-595474623f01"
+    },
+    "api_bot_success": {
+     "S": "https://cnco.webhook.office.com/webhookb2/afe42a94-ae0f-4d90-adf8-e2db63d9b0e7@a50762c4-c5ad-413a-a05e-9ffe15752882/IncomingWebhook/9df7b4db7b25417983bb244f9f328ed7/459fa103-3be7-49a1-beb6-595474623f01"
+    },
+    "athena_query_results_bucket": {
+     "S": "aws-athena-query-results-547265862249-us-east-1"
+    },
+    "athena_query_results_folder": {
+     "S": "athena"
+    },
+    "bucket_artifacts": {
+     "S": "cencosud-prod-cl-mdh-artifacts"
+    },
+    "bucket_dmt": {
+     "S": "cencosud-prod-cl-mdh-dmt"
+    },
+    "bucket_mst": {
+     "S": "cencosud-prod-cl-mdh-mst"
+    },
+    "bucket_raw": {
+     "S": "cencosud-prod-cl-mdh-raw"
+    },
+    "bucket_stg": {
+     "S": "cencosud-prod-cl-mdh-stg"
+    },
+    "cron_expression": {
+     "S": "cron(40 11 * * ? *)"
+    },
+    "dag_name": {
+     "S": "mdh-ventas-stg-mst-dmt-prod"
+    },
+    "folder_artifacts": {
+     "S": "yaml_files/"
+    },
+    "folder_dmt": {
+     "S": "mdh/ventas"
+    },
+    "folder_mst": {
+     "S": "mdh/ventas/tienda-fisica"
+    },
+    "folder_raw": {
+     "S": "raw/mdh_easy"
+    },
+    "folder_stg": {
+     "S": "mdh/datos"
+    },
+    "mst_dmt_config": {
+     "S": "etl_configurations_ventas_prod"
+    },
+    "process_date": {
+     "S": ""
+    },
+    "process_status": {
+     "S": "ENABLED"
+    },
+    "target_glue_database_dmt": {
+     "S": "cl_mdh_dmt_ventas_prod"
+    },
+    "target_glue_database_mst": {
+     "S": "cl_mdh_mst_ventas_prod"
+    },
+    "target_glue_database_stg": {
+     "S": "cl_mdh_stg_prod"
+    },
+    "target_glue_table_dmt": {
+     "L": [
+      {
+       "S": "mdh_ventas_fact_daily_sales"
+      },
+      {
+       "S": "mdh_ventas_dim_item_current"
+      },
+      {
+       "S": "mdh_ventas_dim_location_current"
+      },
+      {
+       "S": "mdh_ventas_dim_calendar_date"
+      }
+     ]
+    },
+    "target_glue_table_mst": {
+     "L": [
+      {
+       "S": "sat_transaction_pos_detail"
+      },
+      {
+       "S": "sat_store_char"
+      },
+      {
+       "S": "hub_customer"
+      },
+      {
+       "S": "hub_store"
+      },
+      {
+       "S": "sat_pos_char"
+      },
+      {
+       "S": "hub_product"
+      },
+      {
+       "S": "link_transaction_pos"
+      },
+      {
+       "S": "link_product_cost"
+      },
+      {
+       "S": "sat_customer_information"
+      },
+      {
+       "S": "sat_product_cost_detail"
+      },
+      {
+       "S": "hub_channel"
+      },
+      {
+       "S": "sat_product_measurement"
+      },
+      {
+       "S": "hub_pos"
+      }
+     ]
+    },
+    "target_glue_table_raw": {
+     "M": {
+      "pos_tables": {
+       "L": [
+        {
+         "S": "prod"
+        },
+        {
+         "S": "enc"
+        },
+        {
+         "S": "impdet"
+        },
+        {
+         "S": "desc"
+        },
+        {
+         "S": "pag"
+        },
+        {
+         "S": "clif"
+        },
+        {
+         "S": "reca"
+        }
+       ]
+      },
+      "sap_tables": {
+       "L": [
+        {
+         "S": "MAKT"
+        },
+        {
+         "S": "MARA"
+        },
+        {
+         "S": "MARM"
+        },
+        {
+         "S": "MAST"
+        },
+        {
+         "S": "MAW1"
+        },
+        {
+         "S": "MBEW"
+        },
+        {
+         "S": "MEAN"
+        },
+        {
+         "S": "MVKE"
+        },
+        {
+         "S": "STAS"
+        },
+        {
+         "S": "STKO"
+        },
+        {
+         "S": "STPO"
+        },
+        {
+         "S": "T006A"
+        },
+        {
+         "S": "T001W"
+        },
+        {
+         "S": "TVGRT"
+        },
+        {
+         "S": "TVKMT"
+        },
+        {
+         "S": "WLK1"
+        },
+        {
+         "S": "WRSZ"
+        },
+        {
+         "S": "ZVTAB_TMATER"
+        }
+       ]
+      }
+     }
+    }
+   }
